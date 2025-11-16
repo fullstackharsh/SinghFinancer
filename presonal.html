@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <script src="script.js" defer></script>
+    <div class="form-container">
+        <h2>Loan Application Form</h2>
+        <form id="loan-form">
+            <div class="form-group">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="loan-amount">Loan Amount:</label>
+                <input type="number" id="loan-amount" required min="1000">
+            </div>
+            <div class="form-group">
+                <label for="loan-type">Loan Type:</label>
+                <select id="loan-type" required>
+                    <option value="">--Select Loan Type--</option>
+                    <option value="personal">Personal Loan</option>
+                    <option value="home">Home Loan</option>
+                    <option value="car">Car Loan</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="annual-income">Annual Income:</label>
+                <input type="number" id="annual-income" required min="0">
+            </div>
+            <div class="form-group">
+                <label for="terms">
+                    <input type="checkbox" id="terms" required> I agree to the terms and conditions.
+                </label>
+            </div>
+            <button type="submit">Submit Application</button>
+        </form>
+        <button><a href="front.html">Back To Home</a></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
